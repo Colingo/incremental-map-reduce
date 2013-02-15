@@ -26,7 +26,8 @@
     "browserify": "https://github.com/raynos/node-browserify/tarball/master",
     "testem": "~0.2.56",
     "node-uuid": "~1.4.0",
-    "callback-reduce": "~1.1.0"
+    "callback-reduce": "~1.1.0",
+    "after": "~0.6.0"
   },
   "licenses": [
     {

@@ -1,11 +1,14 @@
 var test = require("tape")
 var uuid = require("node-uuid")
+var after = require("after")
 
 var expand = require("reducers/expand")
+var fold = require("reducers/fold")
 var take = require("reducers/take")
 var mongo = require("mongo-client")
 var insert = require("mongo-client/insert")
 var find = require("mongo-client/find")
+var close = require("mongo-client/close")
 var passback = require("callback-reduce/passback")
 
 var incrementalMapReduce = require("../index")
@@ -121,6 +124,21 @@ test("doesn't re-run old data", function (assert) {
         }])
 
         assert.end()
+    })
+})
+
+test("cleanup", function (assert) {
+    var done = after(2, function () {
+        close(rawCollection)
+        assert.end()
+    })
+
+    fold(rawCollection, function (col) {
+        col.drop(done)
+    })
+
+    fold(reducedCollection, function (col) {
+        col.drop(done)
     })
 })
 
