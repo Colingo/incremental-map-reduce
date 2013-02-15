@@ -2,7 +2,7 @@
 
 [![build status][1]][2] [![dependency status][3]][4]
 
-[![browser support][5]][6]
+<!-- [![browser support][5]][6] -->
 
 incremental map reduce function for mongodb
 
