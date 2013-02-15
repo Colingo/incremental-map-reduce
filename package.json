@@ -17,16 +17,19 @@
     "email": "raynos2@gmail.com"
   },
   "dependencies": {
-    "reducible": "~1.0.5",
     "mongo-client": "~0.1.5",
     "reducers": "git://github.com/Raynos/reducers"
   },
+  "peerDependencies": {
+    "reducible": "Raynos/reducible#1.x"
+  },
   "devDependencies": {
     "tape": "~0.2.2",
+    "reducible": "Raynos/reducible#1.x",
     "browserify": "https://github.com/raynos/node-browserify/tarball/master",
     "testem": "~0.2.56",
     "node-uuid": "~1.4.0",
-    "callback-reduce": "~1.1.0",
+    "callback-reduce": "Raynos/callback-reduce",
     "after": "~0.6.0"
   },
   "licenses": [
