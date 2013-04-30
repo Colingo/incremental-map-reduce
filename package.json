@@ -1,6 +1,6 @@
 {
   "name": "incremental-map-reduce",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "incremental map reduce function for mongodb",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
