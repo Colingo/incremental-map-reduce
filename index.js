@@ -9,7 +9,8 @@ function incrementalMapReduce(col, opts) {
     var lastTimestampPath = opts.lastTimestampPath || "timestamp"
 
     var lastValue = findOne(opts.reducedCollection, {}, {
-        sort: [["value." + lastTimestampPath, -1]]
+        sort: [["value." + lastTimestampPath, -1]],
+        batchSize: 10
     })
 
     var result = expand(lastValue, function (doc) {
