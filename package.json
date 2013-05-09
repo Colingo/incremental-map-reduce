@@ -16,17 +16,12 @@
     "url": "https://github.com/Colingo/incremental-map-reduce/issues",
     "email": "raynos2@gmail.com"
   },
-  "dependencies": {
-    "mongo-client": "~0.2.1",
-    "reducers": "Raynos/reducers#dedup",
-    "reducible": "Raynos/reducible#v1.0.6"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "tape": "~0.2.2",
-    "browserify": "https://github.com/raynos/node-browserify/tarball/master",
+    "tape": "~1.0.2",
     "node-uuid": "~1.4.0",
-    "callback-reduce": "Raynos/callback-reduce#dedup",
-    "after": "~0.6.0"
+    "after": "~0.6.0",
+    "continuable-mongo": "~0.1.6"
   },
   "licenses": [
     {
